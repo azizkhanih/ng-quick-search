@@ -118,23 +118,23 @@
       }
       }
     },
-    "ng-quicksearch": {
+    "ng-quick-search": {
       "projectType": "library",
-      "root": "projects/ng-quicksearch",
-      "sourceRoot": "projects/ng-quicksearch/src",
+      "root": "projects/ng-quick-search",
+      "sourceRoot": "projects/ng-quick-search/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/ng-quicksearch/ng-package.json"
+            "project": "projects/ng-quick-search/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ng-quicksearch/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ng-quick-search/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/ng-quicksearch/tsconfig.lib.json"
+              "tsConfig": "projects/ng-quick-search/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -142,17 +142,17 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ng-quicksearch/src/test.ts",
-            "tsConfig": "projects/ng-quicksearch/tsconfig.spec.json",
-            "karmaConfig": "projects/ng-quicksearch/karma.conf.js"
+            "main": "projects/ng-quick-search/src/test.ts",
+            "tsConfig": "projects/ng-quick-search/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-quick-search/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
               "lintFilePatterns": [
-                  "projects/ng-quicksearch/**/*.ts",
-                  "projects/ng-quicksearch/**/*.html"
+                  "projects/ng-quick-search/**/*.ts",
+                  "projects/ng-quick-search/**/*.html"
               ]
           }
       }

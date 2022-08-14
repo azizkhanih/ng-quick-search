@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { NgQuicksearchService } from './ng-quicksearch.service';
+import { NgQuickSearchService } from './ng-quick-search.service';
 
-describe('NgQuicksearchService', () => {
-  let service: NgQuicksearchService;
+describe('NgQuickSearchService', () => {
+  let service: NgQuickSearchService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(NgQuicksearchService);
+    service = TestBed.inject(NgQuickSearchService);
   });
 
   it('should be created', () => {

@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, '../../coverage/ng-quicksearch'),
+      dir: require('path').join(__dirname, '../../coverage/ng-quick-search'),
       subdir: '.',
       reporters: [
         { type: 'html' },

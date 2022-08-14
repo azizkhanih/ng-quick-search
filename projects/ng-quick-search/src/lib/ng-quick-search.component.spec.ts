@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgQuickSearchComponent } from './ng-quicksearch.component';
+import { NgQuickSearchComponent } from './ng-quick-search.component';
 
 describe('NgQuickSearchComponent', () => {
     let component: NgQuickSearchComponent;
