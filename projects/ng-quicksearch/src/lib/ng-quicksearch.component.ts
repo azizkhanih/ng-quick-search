@@ -1,20 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
+/**
+ *
+ */
 @Component({
-  selector: 'lib-ng-quicksearch',
-  template: `
-    <p>
-      ng-quicksearch works!
-    </p>
-  `,
-  styles: [
-  ]
+    selector: "ng-quicksearch",
+    templateUrl: "./ng-quicksearch.component.html",
+    styleUrls: ["./ng-quicksearch.component.scss"],
 })
-export class NgQuicksearchComponent implements OnInit {
+export class NgQuickSearchComponent implements OnInit {
+    public constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+    public ngOnInit(): void {}
 }
