@@ -1,0 +1,11 @@
+.quick-search {
+    position: absolute;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    overflow-x: hidden;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .15);
+    max-height: 200px;
+    z-index: 1;
+}

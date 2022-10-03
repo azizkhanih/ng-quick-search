@@ -67,7 +67,6 @@
                     { "blankLine": "always", "prev": "block-like", "next": "*" }
                 ],
                 "eqeqeq": ["error", "always"],
-                "@typescript-eslint/prefer-readonly": ["error", { "onlyInlineLambdas": false }],
                 "no-restricted-imports": ["error", { "patterns": ["lodash"] }]
             }
         },
@@ -81,7 +80,7 @@
                 "jsdoc/require-jsdoc": [
                     "error",
                     {
-                        "contexts": ["MethodDefinition[key.name!=/ngOn|ngAfter|ngDo/][accessibility=/public/]"],
+                        "contexts": ["MethodDefinition[key.name!=/ngOn|ngAfter|ngDo/][accessibility=/public|private/]"],
                         "require": {
                             "FunctionDeclaration": true,
                             "ClassDeclaration": true,

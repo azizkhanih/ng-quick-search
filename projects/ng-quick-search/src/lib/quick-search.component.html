@@ -1,0 +1,26 @@
+<ng-container>
+    <ng-content></ng-content>
+</ng-container>
+
+<div #quickSearchMenu class="quick-search" *ngIf="quickSearchIsOpen">
+    <ng-container *ngIf="quickSearchOptions.length > 0; else noItemIsAvailable">
+        <div *ngFor="let option of quickSearchOptions; trackBy: trackByOption">
+            <ng-container
+                *ngTemplateOutlet="optionTemplate ? optionTemplate : defaultOptionTemplate; context: { option: option }"
+            >
+            </ng-container>
+        </div>
+    </ng-container>
+</div>
+
+<ng-template #defaultOptionTemplate let-option="option"
+    ><input type="checkbox" *ngIf="multiple" /> {{ option.value[bindLabel] }}</ng-template
+>
+
+<ng-template #noItemIsAvailable>
+    <div>{{ noItemIsAvailableText }}</div>
+</ng-template>
+
+<ng-template #notResultFound>
+    <div>{{ notResultFound }}</div>
+</ng-template>
